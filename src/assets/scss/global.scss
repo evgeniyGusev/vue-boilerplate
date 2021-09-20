@@ -1,0 +1,30 @@
+@import "fonts";
+
+@import "mixins";
+
+@import "variables";
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: AvantGardeGothicC, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  @include button-reset();
+}
+
+ul {
+  @include ul-reset();
+}
+
+input {
+  @include input-reset();
+}
